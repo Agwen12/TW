@@ -1,0 +1,9 @@
+
+startowo bread = 1
+
+
+wchodzi producent1 -> wait() bo bread == 1
+wchodzi producent3 -> wait() bo bread == 1
+wchodzi consumer1 -> zjada i robi notify
+notify budzi producent1 -> ustawia bread = 1 i robi notify
+notify budzi producent3 -> wait
