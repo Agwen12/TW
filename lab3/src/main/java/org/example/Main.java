@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Main {
 
-    public static final int BUFF_SIZE = 5;
-    public static final int PRODUCER_COUNT = 5;
-    public static final int CONSUMER_COUNT = 5;
+    public static final int BUFF_SIZE = 10;
+    public static final int PRODUCER_COUNT = 2;
+    public static final int CONSUMER_COUNT = 2;
 
 
 
@@ -28,6 +28,5 @@ public class Main {
 
         consumers.forEach(Thread::start);
         producers.forEach(Thread::start);
-
     }
 }
